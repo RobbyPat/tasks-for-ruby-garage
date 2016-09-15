@@ -24,6 +24,41 @@
 	width: 14%;
 	margin: 0 auto;
 	}
+
+#reg_form {
+	width: 10%;
+	margin: 0 auto;
+	}
+
+#reg {
+	display: block;
+	margin-left: 500px;
+	}
+
+#log_form {
+	width: 6%;
+	margin: 0 auto;
+	}
+
+#log {
+	display: block;
+	margin-left: 530px;
+	}
+
+#a {
+	
+	margin-left: 560px;
+	font-weight: bold;
+}
+
+.error {
+	font-weight: bold;
+	color: red;
+	display: block;
+	width: 250px;
+	margin: 0 auto;
+	}
+
 #newtitle { 
 	list-style: none;
 	margin: 0 auto;
@@ -41,12 +76,15 @@
 	color: #fff;
 	display: inline-block;
 	}
+
 #newtitle li:before {
 	content: url(../img/calendar.png);
 	}
+
 #newtitle li span {
 	vertical-align: 75%;
 	}
+
 .del {
 	width: 45px;
 	height: 40px;
@@ -55,23 +93,28 @@
 	vertical-align: 100%;
 	float: right;
 	}
+
 .addtask {
 	margin-top: -4px;
 	width: 100%;
 	height: 40px;
 	background: #dbdbdb;
 	}
+
 #texttask {
 	width: 80%;
 	height: 25px;
 	vertical-align: 70%;
 	}
+
 .addtask:before {
 	content: url(../img/plus.png);
 	}
+
 #addbtn {
 	vertical-align: 70%;
 	}
+
 #task {
 	border: 1px solid #e7ebea;
 	background: #fff;
@@ -80,23 +123,28 @@
 	margin-top: 0px;
 	color: #000;
 	}
+
 #task:last-child {
 	border-radius: 0 0 15px 15px;
 	}
+
 #task:hover {
 	cursor: pointer;
 	background: #fcfed5;
 	}
+
 #task label {
 	margin-left: 14px;
 	margin-top: 9px;
 	color: #999999;
 	}
+
 #task input {
 	margin-top: 14px;
 	margin-left: 16px;
 	float: left;
 	}
+
 .deltask {
 	display: none;
 	width: 12px;
@@ -107,6 +155,7 @@
 	margin-right: 12px;
 	float: right;
 	}
+
 #task:hover .deltask {
 	display: block;
 	}
