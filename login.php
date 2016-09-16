@@ -1,12 +1,12 @@
 <link rel="stylesheet" type="text/css" href="./css/style.css">
 
 <?php
-$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+$url=parse_url(getenv("https://github.com/RobbyPat/tasks-for-ruby-garage/blob/master/tasks.sql"));
 
 $server = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
-$db = substr($url["tasks"],1);
+$db = substr($url["path"],1);
 
 mysqli_connect($server, $username, $password);
 mysqli_select_db($db);
