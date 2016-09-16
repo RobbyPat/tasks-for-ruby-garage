@@ -2,13 +2,15 @@
 
 <?php
 
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "tasks";
+$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-mysql_connect($host, $user, $pass);
-mysql_select_db($db);
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["tasks"],1);
+
+mysqli_connect($server, $username, $password);
+mysqli_select_db($db);
 
 $error=$pass=$mail=$pass2="";
 
