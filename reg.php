@@ -2,7 +2,8 @@
 
 <?php
 
-$url=parse_url(getenv("https://github.com/RobbyPat/tasks-for-ruby-garage/blob/master/tasks.sql"));
+$url=parse_url(getenv("mysql://bba73e1861313d:5ba94561@us-cdbr-iron-east-04.clear
+db.net/heroku_a5ca1c082fe3990?reconnect=true"));
 
 $server = $url["host"];
 $username = $url["user"];
