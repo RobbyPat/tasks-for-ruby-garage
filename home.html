@@ -14,11 +14,36 @@
 		<h2>SIMPLE TODO LISTS</h2>
 		<h4>FROM RUBY GARAGE</h4>
 		<br/>
-		<form method="post" action="reg.php" id="reg_form">
-			<button class="btn btn-primary" type="submit" value="submit">Registration</button>
-		</form><br/>
-		<form method="post" action="login.php" id="log_form">
-			<button class="btn btn-primary" type="submit" value="submit">Login</button>
-		</form>
+		<br/>
+		<ul id="newtitle">
+		</ul>
+		<br/>
+		<br/>
+		<div class="new-task">
+			<a class="btn btn-primary" data-toggle="modal" data-target="#modal-1" href="#"><i class="glyphicon glyphicon-plus"></i> Add TODO List</a>
+		</div>
+		<div class="modal fade" id="modal-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+					 	<h4 class="modal-title">TODO List Title</h4>
+					</div>
+					<div class="modal-body">
+						<form role="form" action="add_task.php" method="post">
+							<div class="form-group">
+								<input type="text" class="form-control" name="title" id="title" placeholder="Type here"/>
+							</div>
+							<div class="modal-footer" >
+								<button class="btn btn-success" type="button" id="add" data-dismiss="modal">Add</button> 
+								<button class="btn btn-danger" type="button" data-dismiss="modal">Cancel</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/>
+		<br/>
+	</div> 
 </body>
 </html>
